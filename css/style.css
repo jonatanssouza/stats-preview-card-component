@@ -13,16 +13,98 @@
   --desatured-dark-blue: hsl(244, 38%, 16%);
   --soft-violet: hsl(277, 64%, 61%);
   --white: hsla(0, 0%, 100%, 1);
-  --alpha-1: 0.75;
-  --alpha-2: 0.6;
+  --white-text: hsla(0, 0%, 100%, .75);
+  --white-stat: hsla(0, 0%, 100%, .6);
   /* fonts */
-  --title-font: 2.5rem 700 'Inter', sans-serif;
-  --stats-font: 1.5rem 400 'Inter', sans-serif;
-  --text-font: 1.5rem 400 'Lexend Deca', sans-serif;
+  --title-font: 700 2.5rem 'Inter', sans-serif;
+  --stats-font: 400 2rem 'Inter', sans-serif;
+  --text-font: 400 1.5rem 'Lexend Deca', sans-serif;
 }
 
-main {
+body {
   background: var(--very-dark-blue);
-  height: 100vh;
+
+}
+
+.main {
+  width: 100%;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__card {
+  width: 90%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background: var(--desatured-dark-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px -2px hsla(233, 47%, 7%, .7);
+  -webkit-box-shadow: 5px 5px 5px -2px hsla(233, 47%, 7%, .7);
+  -moz-box-shadow: 5px 5px 5px -2px hsla(233, 47%, 7%, .7);
+}
+
+.card__bg-image {
+  width: 100%;
+  height: 25rem;
+  border-radius: 1rem 1rem 0 0;
+  background-image: url('../images/image-header-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative
+}
+
+.card__bg-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--soft-violet);
+  mix-blend-mode: multiply;
+  -webkit-mix-blend-mode: multiply;
+  -moz-mix-blend-mode: multiply;
+  -ms-mix-blend-mode: multiply;
+  -o-mix-blend-mode: multiply
+}
+
+.card__content {
+  padding: 3rem;
+  text-align: center;
+  font: var(--text-font);
+}
+
+.content__header h1 {
+  font: var(--title-font);
+  margin-bottom: 1rem;
+}
+
+.content__body .text {
+  font: var(--text-font);
+  color: var(--white-text);
+}
+
+.content__statistics {
+  font: var(--stats-font);
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.statistics__stat {
+  color: var(--white-stat);
+  text-transform: uppercase;
+  font-variant: all-small-caps;
+  
+}
+
+.stat__number {
+  font: var(--title-font);
+  color: var(--white);
+  margin-bottom: .5rem;
 }

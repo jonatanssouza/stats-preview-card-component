@@ -3,49 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- displays site properly based on user's device -->
+  <!--fonts--><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <!--icon-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--css-->
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Stats preview card component</title>
-  <!--https://fonts.google.com/specimen/Inter 400, 700-->
-  <!--https://fonts.google.com/specimen/Lexend+Deca 400-->
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 11px;
+      text-align: center; 
+      color:white;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .attribution a {
+       color: hsl(228, 45%, 44%); 
+       
+    }
   </style>
 </head>
 <body>
   <main class="main">
     <section class="main__card">
-
-      <header class="card__header">
-        <h1>Get insights that help your business grow.</h1>
-      </header>
-
-      <section class="card__body">
-        <p>
-          Discover the benefits of data analytics and make better decisions regarding revenue, customer
-          experience, and overall efficiency.
-        </p>
-        <div class="card__statistics">
-          <div class="stat">
-            <p>10k+</p>
-            <p>companies</p>
-          </div>
-          <div class="stat">
-            <p>314</p>
-            <p>templates</p>
-          </div>
-          <div class="stat">
-            <p>12m+</p>
-            <p>queries</p>
-          </div>
-        </div><!--card__statistics-->
-      </section><!--card__body-->
-
-      <figure class="card__image">
-        <img src="" alt="">
-      </figure>
+      <div class="card__bg-image">
+      </div>
+      <div class="card__content">
+        <header class="content__header">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+        </header><!--content__header-->
+  
+        <section class="content__body">
+          <p class="text">
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.
+          </p>
+          <div class="content__statistics">
+            <div class="statistics__stat">
+              <p class="stat__number">10k+</p>
+              <p>companies</p>
+            </div>
+            <div class="statistics__stat">
+              <p class="stat__number">314</p>
+              <p>templates</p>
+            </div>
+            <div class="statistics__stat">
+              <p class="stat__number">12m+</p>
+              <p>queries</p>
+            </div>
+          </div><!--content__statistics-->
+        </section><!--content__body-->
+      </div><!--content__container-->
+      
     </section><!--main__card-->
   </main><!--main-->
 
