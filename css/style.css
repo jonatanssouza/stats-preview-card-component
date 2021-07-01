@@ -84,6 +84,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.content__header span {
+  color: var(--soft-violet);
+}
+
 .content__body .text {
   font: var(--text-font);
   color: var(--white-text);
