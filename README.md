@@ -22,7 +22,7 @@ Os usuários devem ser conseguir:
 
 ### Screenshot
 
-![images/screenshot.png]
+![image](./images/screenshot.png)
 
 ### Links
 
