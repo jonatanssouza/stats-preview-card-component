@@ -18,7 +18,7 @@ ajuda você a melhorar suas habilidades de codificação através da construçã
 
 ### O desafio
 
-Os usuários devem ser abéis para:
+Os usuários devem ser conseguir:
 
 - Ver o layout ideal, independente do tamanho da tela;
 
