@@ -12,8 +12,6 @@ ajuda você a melhorar suas habilidades de codificação através da construçã
   - [Construído com:](#construido-com)
   - [O que eu aprendi?](#o-que-eu-aprendi)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Visão geral
 
 ### O desafio
@@ -24,7 +22,7 @@ Os usuários devem ser conseguir:
 
 ### Screenshot
 
-![./images/screenshot.png]
+![screenshot.png]
 
 ### Links
 
